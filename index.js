@@ -7,9 +7,10 @@ module.exports = function(homebridge) {
 
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory("homebridge-vsx", "VSX", VSX);
   
   buildCharacteristics();
+  
+  homebridge.registerAccessory("homebridge-vsx", "VSX", VSX);
 }
 
 function VSX(log, config) {
@@ -19,6 +20,7 @@ function VSX(log, config) {
   this.PORT = 23;
 
   this.service = new Service.Switch(this.name);
+  
   this.service.getCharacteristic(Characteristic.On)
     .on("set", this.setOn.bind(this))
     .on("get", this.getOn.bind(this));
