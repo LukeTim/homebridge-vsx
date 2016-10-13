@@ -322,7 +322,7 @@ function buildCharacteristics()
                                                   minStep: 1,
                                                   perms: [Characteristic.Perms.READ, Characteristic.Perms.WRITE, Characteristic.Perms.NOTIFY]
                                                 },
-                                                '91288267-5678-49B2-8D22-F57BE995AA93'
+                                                'BC3EC892-876E-4755-B08F-9A04F91E8073'
                                               );
   
   inherits(VolumeCharacteristic, Characteristic);
@@ -336,7 +336,7 @@ function buildCharacteristics()
                                                   minStep: 1,
                                                   perms: [Characteristic.Perms.READ, Characteristic.Perms.WRITE, Characteristic.Perms.NOTIFY]
                                                 },
-                                                '91288267-5678-49B2-8D22-F57BE995AA93'
+                                                '1364717E-D2E0-4AB2-BF4F-98CF7E7A4436'
                                              );
   
   inherits(InputCharacteristic, Characteristic); 
